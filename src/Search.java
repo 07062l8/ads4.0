@@ -6,7 +6,7 @@ public class Search<T> {
     protected final Vertex<T> source;
 
     public Search(WeightedGraph<T> graph, T source) {
-        this.source = graph.getVertex(source);  // Теперь работает!
+        this.source = graph.getVertex(source);
         this.marked = new HashSet<>();
         this.edgeTo = new HashMap<>();
     }
